@@ -46,7 +46,7 @@ export default function Home() {
         </nav>
         <div className="hero-copy shell">
           <p className="kicker">VISUAL / MOTION PORTFOLIO</p>
-          <h1>Portfolio</h1><h3>李宏鑫</h3><p className="hero-school">北京化工大学</p>
+          <h1 className="hero-title-cn">视频类作品集</h1><h3>李宏鑫</h3><p className="hero-school">北京化工大学</p>
           <p className="hero-intro">用影像与设计，让创意连接现实。<br />让想象，成为可能。</p>
         </div>
         <a className="scroll-cue" href="#work"><span><ArrowDown size={18} /></span>SCROLL TO EXPLORE</a>

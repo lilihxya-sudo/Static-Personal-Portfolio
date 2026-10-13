@@ -52,6 +52,7 @@ await esbuild.build({
   }}]
 });
 let css = fs.readFileSync(path.join(source, 'original-compiled.css'), 'utf8');
+css += '\n' + fs.readFileSync(path.join(source, 'title.css'), 'utf8');
 css = css.replaceAll('/portfolio-assets/', './portfolio-assets/').replaceAll('/media/', './media/');
 css = css.replace(/(-?(?:\d*\.)?\d+)s?vh\b/g, (_, value) => `calc(var(--viewport-height, 100svh) * ${Number(value) / 100})`);
 fs.writeFileSync(path.join(out, 'styles.css'), css);

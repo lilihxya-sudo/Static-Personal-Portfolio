@@ -1,0 +1,7 @@
+.hero h1.hero-title-cn {
+  font-size: clamp(2rem, 5.8vw, 5rem);
+  line-height: 1.18;
+  letter-spacing: -.035em;
+  margin-bottom: 14px;
+  font-weight: 620;
+}
